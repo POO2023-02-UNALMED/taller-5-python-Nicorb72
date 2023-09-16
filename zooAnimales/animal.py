@@ -23,9 +23,9 @@ class Animal:
     @staticmethod
     def toString(self):
         if self._zona != None:
-            salida = f"Mi nombre es {self._nombre}, tengo una edad de {str(self._edad)},habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona.getNombre()}, en el {self._zona.getZoo().getNombre()}"
+            salida = f"Mi nombre es {self._nombre}, tengo una edad de {str(self._edad)}, habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona.getNombre()}, en el {self._zona.getZoo().getNombre()}"
         else:
-            salida = f"Mi nombre es {self._nombre}, tengo una edad de {str(self._edad)},habito en {self._habitat} y mi genero es {self._genero}"
+            salida = f"Mi nombre es {self._nombre}, tengo una edad de {str(self._edad)}, habito en {self._habitat} y mi genero es {self._genero}"
         return salida
 
     @classmethod

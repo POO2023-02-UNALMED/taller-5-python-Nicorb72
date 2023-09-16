@@ -24,7 +24,7 @@ class Anfibio(Animal):
         return cls(nombre, edad, "selva", genero, "rojo", True)
     
     @classmethod
-    def crearSerpiente(cls, nombre, edad, genero):
+    def crearSalamandra(cls, nombre, edad, genero):
         cls.serpientes += 1
         return cls(nombre, edad, "selva", genero, "negro y amarillo", False)
     
