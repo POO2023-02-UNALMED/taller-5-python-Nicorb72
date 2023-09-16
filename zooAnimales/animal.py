@@ -20,12 +20,11 @@ class Animal:
     def totalPorTipo():
         return "Mamiferos: " + str(zooAnimales.mamifero.Mamifero.cantidadMamiferos()) + "\nAves: " + str(zooAnimales.ave.Ave.cantidadAves()) + "\nReptiles: " + str(zooAnimales.reptil.Reptil.cantidadReptiles()) + "\nPeces: "+ str(zooAnimales.pez.Pez.cantidadPeces()) + "\Anfibios: "+ str(zooAnimales.anfibio.Anfibio.cantidadAnfibios())
     
-    @staticmethod
     def toString(self):
         if self._zona != None:
-            salida = f"Mi nombre es {self._nombre}, tengo una edad de {str(self._edad)}, habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona.getNombre()}, en el {self._zona.getZoo().getNombre()}"
+            salida = "Mi nombre es " + self._nombre + ", tengo una edad de " + str(self._edad) + ", habito en " + self._habitat + " y mi genero es " + self._genero + ", la zona en la que me ubico es " + self._zona.getNombre() + ", en el zoo " + self._zona.getZoo().getNombre()
         else:
-            salida = f"Mi nombre es {self._nombre}, tengo una edad de {str(self._edad)}, habito en {self._habitat} y mi genero es {self._genero}"
+            salida = "Mi nombre es " + self._nombre + ", tengo una edad de " + str(self._edad) + ", habito en " + self._habitat + " y mi genero es " + self._genero
         return salida
 
     @classmethod
