@@ -10,7 +10,7 @@ class Ave(Animal):
         Ave._listado.append(self)
 
     @staticmethod
-    def cantidadReptiles():
+    def cantidadAves():
         return len(Ave._listado)
     
     @staticmethod

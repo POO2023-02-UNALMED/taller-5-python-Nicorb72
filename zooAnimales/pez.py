@@ -11,7 +11,7 @@ class Pez(Animal):
         Pez._listado.append(self)
 
     @staticmethod
-    def cantidadReptiles():
+    def cantidadPeces():
         return len(Pez._listado)
     
     @staticmethod
