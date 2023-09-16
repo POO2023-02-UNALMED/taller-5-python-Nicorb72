@@ -2,14 +2,15 @@ import zooAnimales
 
 class Animal:
     _totalAnimales = 0
-    _zona = ""
 
 
-    def __init__(self, nombre, edad, habitat, genero):
+
+    def __init__(self, nombre, edad, habitat, genero, zona = None):
         self._nombre = nombre
         self._edad = edad
         self._habitat = habitat
         self._genero = genero
+        self._zona = zona
         Animal._totalAnimales += 1
 
     def movimiento(self):
@@ -22,10 +23,9 @@ class Animal:
     
     def toString(self):
         if self._zona != None:
-            salida = "Mi nombre es " + self._nombre + ", tengo una edad de " + str(self._edad) + ", habito en " + self._habitat + " y mi genero es " + self._genero + ", la zona en la que me ubico es " + str(self._zona.getNombre()) + ", en el zoo " + str(self._zona.getZoo().getNombre())
+            return "Mi nombre es " + self._nombre + ", tengo una edad de " + str(self._edad) + ", habito en " + self._habitat + " y mi genero es " + self._genero + ", la zona en la que me ubico es " + self._zona.getNombre() + ", en el zoo " + self._zona.getZoo().getNombre()
         else:
-            salida = "Mi nombre es " + self._nombre + ", tengo una edad de " + str(self._edad) + ", habito en " + self._habitat + " y mi genero es " + self._genero
-        return salida
+            return "Mi nombre es " + self._nombre + ", tengo una edad de " + str(self._edad) + ", habito en " + self._habitat + " y mi genero es " + self._genero
 
     @classmethod
     def getTotalAnimales(cls):
@@ -66,3 +66,4 @@ class Animal:
     
     def setGenero(self, genero):
         self._genero = genero
+
